@@ -1,0 +1,78 @@
+@import "../../variables.scss";
+
+
+
+#get-in-touch-block {
+  background-color: $body-color;
+  padding: 1vh 0vw 10vh 0vw;
+
+  #get-in-touch-header{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #get-in-touch-form-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 25vw;
+
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        padding: 0vh 0vw 3vh 0vw;
+
+        label {
+          font-size: 1.5rem;
+          padding: 0vh 0vw 0.2vh 0vw;
+        }
+
+        input {
+          background-color: $body-color;
+          border: $nav-color 1px solid;
+          height: 2.5rem;
+          border-radius: 20px;
+          padding: 0px 10px;
+          font-size: 1.2rem;
+          outline: none;
+        }
+
+        textarea {
+          background-color: $body-color;
+          border: $nav-color 1px solid;
+          border-radius: 20px;
+          height: 10vh;
+          min-height: 10vh;
+          max-height: 20vh;
+          max-width: 40vw;
+          padding: 10px 10px;
+          font-size: 1.2rem;
+          outline: none;
+          overflow: auto;
+        }
+      }
+
+      #submit-message-btn {
+        width: 12vw;
+        font-size: 1.2rem;
+        background-color: $body-color;
+        border: $nav-color 1px solid;
+        border-radius: 20px;
+        padding: 1.5vh 1vw;
+        color: $nav-color;
+
+        &:hover {
+          background-color: $nav-color;
+          color: $body-color;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

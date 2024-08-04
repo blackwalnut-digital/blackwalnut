@@ -1,0 +1,17 @@
+<div id="process-block">
+  <div id="process-content-block">
+    <div id="process-header-block"><h3>{{ process.header }}</h3></div>
+    <div id="process-body-block" *ngFor="let step of process.steps">
+
+      <div class="process-step-block">
+        <div id="{{ step.stepClassName }}">
+          <p *ngIf="step.stepClassName === 'process-description-odd'">{{ step.value }}</p>
+        </div>
+        <div class="step-image"><img src="{{ step.image }}"></div>
+        <div id="{{ step.stepClassName }}">
+          <p *ngIf="step.stepClassName !== 'process-description-odd'">{{ step.value }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+@import "../../variables.scss";
+
+#process-block {
+  padding: 15vh 0vw;
+  background-color: $body-color;
+
+  #process-content-block {
+    #process-header-block {
+      text-align: center;
+
+      h3 {
+        font-size: 3rem;
+        color: $nav-color;
+        margin: 0;
+        padding: 10vh 0vw 10vh 0vw;
+      }
+    }
+
+    #process-body-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .process-step-block {
+        max-width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1vw;
+        padding: 3vh 1vw;
+        align-items: center;
+
+        .step-image {
+          width: 10vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          img {
+            max-width: 20vw;
+            max-height: 20vh;
+          }
+        }
+
+        #process-description {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          width: 34vw;
+          padding: 0vh 0vw 5vh 0.5vw;
+          margin: 0;
+          color: $nav-color;
+          font-size: 1.3rem;
+          line-height: 1.5;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        #process-description-odd {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          width: 34vw;
+          padding: 0vh 0vw 5vh 0.5vw;
+          margin: 0;
+          color: $nav-color;
+          font-size: 1.3rem;
+          line-height: 1.5;
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

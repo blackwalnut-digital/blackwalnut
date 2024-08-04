@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+
+#banner-block {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/assets/img/web_agency_grows_business_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 4vh;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: flex-end;
+
+  h1, h2 {
+    padding: 0.5vh 12vw 0.5vh 10vw;
+    margin: 0;
+    max-width: 50vw;
+    color: $body-color;
+    font-size: larger;
+    font-size: 3rem;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 2vh 6vw 10vh 10vw;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  #book-call-btn {
+    background-color: $nav-color;
+    border: 1px double $body-color;
+    border-radius: 20px;
+    width: 10vw;
+    font-size: 1.6rem;
+    padding: 1.5vh 0vw;
+    color: $body-color;
+    margin: 5vh 20vw 1vh 0vw;
+  }
+}

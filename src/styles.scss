@@ -1,0 +1,18 @@
+@import "./app/variables.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: $body-color;
+  height: 100vh;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.fc .fc-daygrid-day .fc-day-today {
+  color: $nav-color !important;
+  font-size: 3rem !important;
+}

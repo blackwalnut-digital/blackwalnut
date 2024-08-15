@@ -10,20 +10,28 @@ module.exports = {
     },
     extend: {
       "spacing": {
-        "1-vw":"1vw",
+        "1vw":"1vw",
         "1.5vw":"1.5vw",
-        "2-vw":"2vw",
-        "5-vw":"5vw",
-        "10-vw":"10vw",
-        "15-vw":"15vw",
-        "20-vw":"20vw",
-        "1-vh":"1vh",
-        "2-vh":"2vh",
+        "2vw":"2vw",
+        "5vw":"5vw",
+        "10vw":"10vw",
+        "15vw":"15vw",
+        "20vw":"20vw",
+        "50vw":"50vw",
+        "70vw":"70vw",
+        "100vw":"100vw",
+        "1vh":"1vh",
+        "2vh":"2vh",
         "3vh":"3vh",
-        "5-vh":"5vh",
-        "10-vh":"10vh",
-        "15-vh":"15vh",
-        "20-vh":"20vh"
+        "5vh":"5vh",
+        "10vh":"10vh",
+        "15vh":"15vh",
+        "20vh":"20vh",
+        "50vh":"50vh",
+        "70vh":"70vh",
+        "80vh":"80vh",
+        "90vh":"90vh",
+        "100vh":"100vh",
       },
       "boxShadow": {
         "3xl": '-10px 5px 20px -2px rgba(24, 25, 25, 0.8)'
@@ -38,8 +46,19 @@ module.exports = {
       },
       "fontSize": {
         "1.4":"1.4rem",
+        "1.5rem":"1.5rem",
         "2rem":"2rem"
-      }
+      },
+      "maxWidth": {
+        "half":"50vw"
+      },
+      "backgroundImage": {
+        "hero": "url('/img/web_agency_grows_business_banner.jpg')"
+      },
+      "fontFamily": {
+        lora: ['Lora', 'serif'],
+        lato: ['Lato', 'sans-serif'],
+      },
     },
   },
   plugins: [],

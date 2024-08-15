@@ -17,6 +17,7 @@ import { CalendarComponent } from './pages/calendar/calendar.component';
 import { CalendarElemComponent } from './components/calendar/calendar-elem.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { FragmentScrollService } from './services/fragment-scroll.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule, HttpClientModule, BrowserAnimationsModule, FullCalendarModule
   ],
-  providers: [],
+  providers: [FragmentScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

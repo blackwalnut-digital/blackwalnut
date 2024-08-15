@@ -1,36 +1,20 @@
 @import "../../variables.scss";
 
-// #content-section {
-//   position: relative;
-//   z-index: 1;
-//   margin-top: 100vh;
-//   background-color: $body-color;
-//   padding: 0;
-
-//   h3 {
-//     text-align: center;
-//     color: $nav-color;
-//     font-size: 3rem;
-//     padding: 10vh 0vw 5vh 0vw;
-//     margin: 0;
-//   }
-// }
-
 #visibility-block {
-  padding: 0vh 0vw 0vh 0vw;
+  // padding: 0vh 0vw 0vh 0vw;
 
   #visibility-block-title {
-    background-color: $body-color;
-    font-size: 3rem;
-    color: $nav-color;
-    margin: 0px;
-    padding: 15vh 5vw 5vh 5vw;
+    // background-color: white;
+    // font-size: 3rem;
+    // color: black;
+    // margin: 0px;
+    // padding: 15vh 5vw 5vh 5vw;
     text-align: center;
   }
 
   h4 {
-    background-color: $nav-color;
-    color: $body-color;
+    background-color: black;
+    color: white;
     font-size: 1.7rem;
     padding: 5vh 10vw;
     margin: 0;
@@ -52,8 +36,8 @@
 
       .reason-to-have-website-title {
         color: $nav-color;
-        background-color: $body-color;
-        padding: 0vh 0vw;
+        background-color: white;
+        padding: 0vh 0vw 1vh 0vw;
         margin: 0;
         text-align: left;
         font-size: 2rem;

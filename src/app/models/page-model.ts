@@ -1,7 +1,10 @@
 export interface PageComponent {
   mainHeaderLine1: string;
-  h2Line1: string;
-  h2Line2: string;
+  mainHeaderLine2: string;
+  mainHeaderLine3: string;
+  subHeaderLine1: string;
+  subHeaderLine2: string;
+  subHeaderLine3: string;
 }
 
 export interface ServiceCard {

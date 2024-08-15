@@ -1,13 +1,13 @@
-<div id="process-block">
+<div id="process-block" class="mb-15vh">
   <div id="process-content-block">
-    <div id="process-header-block"><h3>{{ process.header }}</h3></div>
+    <div id="process-header-block" class="pb-3rem"><h3>{{ process.header }}</h3></div>
     <div id="process-body-block" *ngFor="let step of process.steps">
 
       <div class="process-step-block">
         <div id="{{ step.stepClassName }}">
           <p *ngIf="step.stepClassName === 'process-description-odd'">{{ step.value }}</p>
         </div>
-        <div class="step-image"><img src="{{ step.image }}"></div>
+        <div class="step-image w-15vw"><img src="{{ step.image }}" class="rounded-20 shadow-3xl"></div>
         <div id="{{ step.stepClassName }}">
           <p *ngIf="step.stepClassName !== 'process-description-odd'">{{ step.value }}</p>
         </div>

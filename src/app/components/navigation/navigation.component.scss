@@ -1,22 +1,7 @@
 @import '../../variables.scss';
 
-#nav-container {
-  width: 100vw;
-  padding: 0%;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  position: fixed;
-  top: 0;
-  z-index: 999999;
-  background-color: $nav-color;
-}
 
 #navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 2.5vh 5vw;
   gap: 2vw;
   max-width: 50vw;
   font-weight: 500;
@@ -24,6 +9,6 @@
 
 .nav-item-link a {
   text-decoration: none;
-  color: $body-color;
+  color: $main-text-color;
   font-size: 1.4rem;
 }

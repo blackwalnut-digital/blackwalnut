@@ -3,17 +3,15 @@
 </section>
 
 <section id="content-section">
-  <h3>What Do We Do</h3>
-
   <app-services [services]="pages.home.content.serviceCards"></app-services>
 
   <app-visibility [header]="pages.home.content.visibilityBlockHeader"></app-visibility>
 
-  <app-our-mission [mission]="pages.home.content.mission"></app-our-mission>
+  <app-our-mission [mission]="pages.home.content.mission" id="our-mission"></app-our-mission>
 
-  <app-process [process]="pages.home.content.process"></app-process>
+  <app-process [process]="pages.home.content.process" id="our-way"></app-process>
 
-  <app-get-in-touch></app-get-in-touch>
+  <app-get-in-touch id="contact-us"></app-get-in-touch>
 
   <app-footer></app-footer>
 </section>

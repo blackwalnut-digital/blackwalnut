@@ -1,9 +1,12 @@
 {
   "home": {
     "header": {
-      "mainHeaderLine1": "Web Design Agency that",
-      "h2Line1": "Boost online presence with a stunning website and expert SEO optimization!",
-      "h2Line2": "Contact us today to boost your leads and grow your business!"
+      "mainHeaderLine1": "Create",
+      "mainHeaderLine2": "Website That Grows ",
+      "mainHeaderLine3": "Your Business",
+      "subHeaderLine1": "Become visible online with a",
+      "subHeaderLine2": "stunning website and expert SEO",
+      "subHeaderLine3": "optimization!"
     },
     "content": {
       "visibilityBlockHeader": "For a small business, a website is a powerful tool that drives growth, increases visibility, and enhances customer relations. Investing in a well-designed, SEO-optimized website is crucial for long-term success in today's digital marketplace.",
@@ -29,19 +32,19 @@
         "header": "Follow The Way To Success",
         "steps": [
           {
-            "image": "assets/img/understand-customer-needs.svg",
+            "image": "assets/img/research-needs-and-requirements.jpg",
             "stepClassName": "process-description",
-            "value": "Lorem ipsum Lorem ipsum Lorem ipsum"
+            "value": "At Black Walnut, we start by understanding your unique business needs through thorough research. This allows us to create customized strategies that enhance user experience and deliver targeted content designed for your audience."
           },
           {
-            "image": "assets/img/user_experience.svg",
+            "image": "assets/img/user-experience.jpg",
             "stepClassName": "process-description-odd",
-            "value": "Lorem ipsum Lorem ipsum Lorem ipsum"
+            "value": "We create websites and the necessary infrastructure that fit your business's unique needs. We handle everything from developing the site to filling it with compelling content, ensuring that the final product effectively connects you with your audience."
           },
           {
-            "image": "assets/img/content-marketing.svg",
+            "image": "assets/img/digital-marketing-and-seo.jpg",
             "stepClassName": "process-description",
-            "value": "Lorem ipsum Lorem ipsum Lorem ipsum"
+            "value": "We craft SEO-friendly content and optimize your website to enhance your online presence. Our goal is to make sure your business stands out and is easily found by your target audience."
           }
         ]
       }

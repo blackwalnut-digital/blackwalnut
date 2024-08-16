@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts}",
   ],
+  purge: ['./src/**/*.{html,ts}'],
   theme: {
     colors: {
       'nav-brown': '#181919',

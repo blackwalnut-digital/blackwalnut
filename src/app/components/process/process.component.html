@@ -3,11 +3,11 @@
     <div id="process-header-block" class="pb-3rem"><h3>{{ process.header }}</h3></div>
     <div id="process-body-block" *ngFor="let step of process.steps">
 
-      <div class="process-step-block">
+      <div class="process-step-block flex flex-row justify-center">
         <div id="{{ step.stepClassName }}">
           <p *ngIf="step.stepClassName === 'process-description-odd'">{{ step.value }}</p>
         </div>
-        <div class="step-image w-15vw"><img src="{{ step.image }}" class="rounded-20 shadow-3xl"></div>
+        <div class="step-image w-20vw"><img src="{{ step.image }}" class="rounded-20 shadow-3xl w-10vw h-20vh gap-3 py-3vh px-1vw"></div>
         <div id="{{ step.stepClassName }}">
           <p *ngIf="step.stepClassName !== 'process-description-odd'">{{ step.value }}</p>
         </div>

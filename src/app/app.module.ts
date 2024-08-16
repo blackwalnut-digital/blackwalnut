@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { CalendarElemComponent } from './components/calendar/calendar-elem.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { FragmentScrollService } from './services/fragment-scroll.service';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,12 @@ import { FragmentScrollService } from './services/fragment-scroll.service';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule, HttpClientModule, BrowserAnimationsModule, FullCalendarModule
+    AppRoutingModule, HttpClientModule, BrowserAnimationsModule, FullCalendarModule, ServiceWorkerModule.register('ngsw-worker.js', {
+  enabled: !isDevMode(),
+  // Register the ServiceWorker as soon as the application is stable
+  // or after 30 seconds (whichever comes first).
+  registrationStrategy: 'registerWhenStable:30000'
+})
   ],
   providers: [FragmentScrollService],
   bootstrap: [AppComponent]

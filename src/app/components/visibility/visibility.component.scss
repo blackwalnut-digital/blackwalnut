@@ -13,7 +13,7 @@
   }
 
   h4 {
-    background-color: black;
+    background-color: #391111;
     color: white;
     font-size: 1.7rem;
     padding: 5vh 10vw;
@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10vh 15vw 0vh 10vw;
+    // padding: 10vh 15vw 0vh 10vw;
     background-color: $body-color;
 
     #why-you-need-website-block {
@@ -35,8 +35,8 @@
       max-width: 40vw;
 
       .reason-to-have-website-title {
-        color: $nav-color;
-        background-color: white;
+        // color: $nav-color;
+        // background-color: white;
         padding: 0vh 0vw 1vh 0vw;
         margin: 0;
         text-align: left;

@@ -32,19 +32,24 @@
         "header": "Follow The Way To Success",
         "steps": [
           {
-            "image": "assets/img/research-needs-and-requirements.jpg",
+            "image": "assets/img/telephone.svg",
             "stepClassName": "process-description",
-            "value": "At Black Walnut, we start by understanding your unique business needs through thorough research. This allows us to create customized strategies that enhance user experience and deliver targeted content designed for your audience."
+            "value": "Get a free consultation and let us know about your business goals."
           },
           {
-            "image": "assets/img/user-experience.jpg",
+            "image": "assets/img/paintbrush.svg",
             "stepClassName": "process-description-odd",
-            "value": "We create websites and the necessary infrastructure that fit your business's unique needs. We handle everything from developing the site to filling it with compelling content, ensuring that the final product effectively connects you with your audience."
+            "value": "We design a website according to your business needs."
           },
           {
-            "image": "assets/img/digital-marketing-and-seo.jpg",
+            "image": "assets/img/implementation.svg",
             "stepClassName": "process-description",
-            "value": "We craft SEO-friendly content and optimize your website to enhance your online presence. Our goal is to make sure your business stands out and is easily found by your target audience."
+            "value": "We implement features that make your business grow."
+          },
+          {
+            "image": "assets/img/search.svg",
+            "stepClassName": "process-description",
+            "value": "Get visible online and start delivering to your clients."
           }
         ]
       }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 
@@ -11,6 +11,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
+    preloadingStrategy: PreloadAllModules,
     initialNavigation: 'enabledBlocking',
     anchorScrolling: 'enabled'
 })],

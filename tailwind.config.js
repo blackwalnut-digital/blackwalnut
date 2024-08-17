@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     colors: {
       'nav-brown': '#181919',
-      'body-beige': '#beb2a1'
+      'body-beige': '#beb2a1',
+      'amber': '#391111]'
     },
     extend: {
       "spacing": {
@@ -60,6 +61,9 @@ module.exports = {
         lora: ['Lora', 'serif'],
         lato: ['Lato', 'sans-serif'],
       },
+      transitionDuration: {
+        '2000': '2000ms',
+      }
     },
   },
   plugins: [],

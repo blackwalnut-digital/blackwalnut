@@ -1,6 +1,9 @@
 <div id="banner-block" class="h-100vh flex flex-row justify-start z-0 pb-0 m-0">
 
-  <div id="headers-container" class="flex flex-col gap-2 justify-center items-center mx-10vw px-0">
+  <div
+       id="headers-container"
+       class="flex flex-col gap-2 justify-center items-center
+              mx-10vw px-0">
     <h1 id="main-header" class=" flex flex-col gap-10 justify-center items-center w-[35vw]">
       <span class="font-lora font-medium text-[3.5rem] z-10">{{ header.mainHeaderLine1 }}</span>
       <span class="font-lora font-medium text-[3.5rem] z-10">{{ header.mainHeaderLine2 }}</span>
@@ -14,18 +17,23 @@
     </h2>
 
     <button (click)="redirectToCalendar()" id="book-call-btn"
-      class="bg-transparent font-lato font-medium z-10 py-[1.5vh] px-0 text-[25px] rounded-20 mt-5vh border-black border-solid border w-15vw"
+      class="bg-transparent font-lato font-medium z-10 py-[1.8vh] pb-[2vh] px-0 text-[25px] text-[#391111] rounded-20 mt-5vh border-[#391111] border-solid border-2 w-15vw"
       type="button">Get Free Consultation
     </button>
   </div>
 
   <div id="picture-block" class="flex flex-row justify-start">
     <img src="../../../assets/img/overlay.svg"
+        loading="lazy"
         alt="Wave overlay"
         class="absolute left-[15vw] my-0 mx-auto p-0 z-0 max-h-100vh h-100vh">
     <img
       src="../../../assets/img/create-website-growing-business-min.webp"
       alt="Picture displaying a successful man creating business website"
-      class="max-w-[75vw] max-h-100vh w-[61.8vw] h-100vh h-auto object-cover z-[-1] absolute left-[37.4vw]">
+      class="max-w-[75vw] max-h-100vh w-[61.8vw] h-100vh h-auto
+            object-cover
+            z-[-1] absolute left-[37.4vw]
+
+            sm:hidden">
   </div>
 </div>

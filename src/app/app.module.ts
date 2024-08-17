@@ -19,6 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { FragmentScrollService } from './services/fragment-scroll.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { FadeInDirective } from './directives/fade-in.directive';
+import { NgOptimizedImage } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -33,17 +36,19 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ProcessComponent,
     FooterComponent,
     CalendarComponent,
-    CalendarElemComponent
+    CalendarElemComponent,
+    FadeInDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule, HttpClientModule, BrowserAnimationsModule, FullCalendarModule, ServiceWorkerModule.register('ngsw-worker.js', {
+    AppRoutingModule, HttpClientModule, BrowserAnimationsModule, FullCalendarModule, NgOptimizedImage, ServiceWorkerModule.register('ngsw-worker.js', {
   enabled: !isDevMode(),
   // Register the ServiceWorker as soon as the application is stable
   // or after 30 seconds (whichever comes first).
   registrationStrategy: 'registerWhenStable:30000'
 })
   ],
+  exports: [FadeInDirective],
   providers: [FragmentScrollService],
   bootstrap: [AppComponent]
 })

@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class OurMissionComponent implements OnInit {
   @Input() mission: Mission;
+  missionImage: string = "assets/img/growing-business-plan-image.jpg";
 
   constructor() { }
 

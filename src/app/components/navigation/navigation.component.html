@@ -1,8 +1,15 @@
 <div
   id="nav-container"
-  class="{{ scrolled ? 'bg-[#ffffff] bg-opacity-50' : 'bg-transparent' }} w-100vw h-[12vh] py-1vh pl-5vw flex flex-row justify-start fixed top-0 z-50">
+  class="{{ scrolled ? 'bg-[#ffffff] bg-opacity-50' : 'bg-transparent' }}
+        w-100vw h-[12vh] py-1vh pl-5vw
+        flex flex-row justify-start
+        fixed top-0 z-50
+        hidden md:flex">
   <a routerLink="">
-    <img src="../../../assets/img/walnut-logo.svg" class="w-[5vw] h-[10vh] z-[999999]" alt="Black Walnut Web Design Agency logo">
+    <img src="../../../assets/img/walnut-logo.svg"
+         class="w-[5vw] h-[10vh] z-[999999]
+                hidden md:block"
+         alt="Black Walnut Web Design Agency logo">
   </a>
   <nav id="navigation" class="flex flex-row pt-[4vh] pb-3vh px-5vw">
     <span class="nav-item-link font-lora"><a routerLink="">Home</a></span>
@@ -11,5 +18,22 @@
     <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'our-way'">Our Way</a></span>
     <span class="nav-item-link font-lora"><a routerLink="">Blog</a></span>
     <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'contact-us'">Contact Us</a></span>
+  </nav>
+</div>
+
+<div class="flex md:hidden flex-col justify-end items-end">
+  <button (click)="toggleMenu()" class=" p-2">
+    <img class="block mb-1" src="../../../assets/img/mobile-menu.svg" alt="Mobile menu">
+  </button>
+
+  <nav [ngClass]="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="relative flex flex-col justify-center items-center space-x-4 w-[95vw]">
+    <ul class="flex flex-col justify-center items-center gap-0">
+      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']">Home</a></li>
+      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'what-do-we-do'">Services</a></li>
+      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'our-mission'">Our Mission</a></li>
+      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'our-way'">Our Way</a></li>
+      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" routerLink="">Blog</a></li>
+      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'contact-us'">Contact Us</a>
+    </ul>
   </nav>
 </div>

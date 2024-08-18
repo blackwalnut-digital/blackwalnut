@@ -33,11 +33,9 @@
     "@fullcalendar/core": "6.1.15",
     "@fullcalendar/daygrid": "6.1.15",
     "@fullcalendar/interaction": "^6.1.15",
-    "@types/luxon": "^3.4.2",
     "autoprefixer": "^10.4.20",
     "compression": "^1.7.4",
     "express": "^4.15.2",
-    "luxon": "^3.4.4",
     "ng2-material-dropdown": "^1.0.0",
     "postcss": "^8.4.40",
     "rxjs": "^7.8.1",
@@ -65,7 +63,6 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~5.4.5",
-    "webpack-bundle-analyzer": "^4.10.2",
     "yarn-deduplicate": "^6.0.2"
   }
 }

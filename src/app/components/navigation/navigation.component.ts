@@ -7,6 +7,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
   scrolled: boolean = false;
+  isMenuOpen = false;
 
   constructor() { }
 
@@ -19,6 +20,10 @@ export class NavigationComponent implements OnInit {
     console.log(this.scrolled);
     this.scrolled = window.scrollY > scrollThreshold;
     console.log(this.scrolled);
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
 }

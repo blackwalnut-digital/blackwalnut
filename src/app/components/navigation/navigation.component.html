@@ -5,14 +5,14 @@
         flex flex-row justify-start
         fixed top-0 z-50
         hidden md:flex">
-  <a routerLink="">
+  <a [routerLink]="['']" [fragment]="'banner-block'">
     <img src="../../../assets/img/walnut-logo.svg"
          class="w-[5vw] h-[10vh] z-[999999]
                 hidden md:block"
          alt="Black Walnut Web Design Agency logo">
   </a>
   <nav id="navigation" class="flex flex-row pt-[4vh] pb-3vh px-5vw">
-    <span class="nav-item-link font-lora"><a routerLink="">Home</a></span>
+    <span class="nav-item-link font-lora"><a [routerLink]="['']" [fragment]="'banner-block'">Home</a></span>
     <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'what-do-we-do'">Services</a></span>
     <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'our-mission'">Our Mission</a></span>
     <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'our-way'">Our Way</a></span>

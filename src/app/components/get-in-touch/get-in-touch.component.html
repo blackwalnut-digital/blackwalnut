@@ -3,35 +3,43 @@
      class="flex flex-col items-center
      fade-in-element opacity-0 fadein">
   <div id="get-in-touch-header" class="pb-5vh mt-15vh">
-    <p class="text-[#391111] text-[3rem] font-lora font-medium text-center leading-10">Get In Touch With Us</p>
+    <p class="text-[#391111] text-[3rem] font-lora font-medium text-center leading-10 w-[90vw]">Get In Touch With Us</p>
   </div>
 
-  <div class="bg-[#ffffff] w-1/2 rounded-20 flex flex-col-reverse md:flex-row justify-end py-10 px-20">
-    <div class="text-[#000000] flex flex-col items-center w-[100%] ">
+  <div class="bg-[#ffffff] md:w-1/2 rounded-20 flex flex-col-reverse md:flex-row justify-end py-10 px-0 md:px-20 m-0">
+    <div class="text-[#000000] flex flex-col items-center w-[100%] md:mr-5vw">
       <div class="text-2rem">Reach out to us</div>
+      <div class="text-[#391111] text-[1.5rem] font-lora font-medium py-[4vh] flex flex-col justify-start items-center md:items-start gap-4">
+        <div class="flex flex-row gap-2"><img src="../../../assets/img/phone-icon.svg" alt="Phone icon"> +1 (346) 465 4664</div>
+        <div class="flex flex-row gap-2"><img src="../../../assets/img/email-icon.svg" alt="Email icon">blackwalnutdigital&#64;gmail.com</div>
+      </div>
+    </div>
+
+    <div class="block md:hidden flex flex-row justify-center my-5vh">
+      <p class="text-[#391111] font-lora text-[2rem]">OR</p>
     </div>
 
     <div id="get-in-touch-form-block" class="flex flex-row justify-center">
-      <form id="contact-form" class="text-[#000000] flex flex-col justify-center w-20vw">
-        <div class="form-input">
-          <label class="pb-1vh">Name:</label>
+      <form id="contact-form" class="text-[#000000] flex flex-col justify-center w-[90vw] md:w-20vw">
+        <div class="form-input contact-form-input">
+          <label class="pb-1vh text-[1.5rem]">Name:</label>
           <input type="text" placeholder="Tell us how can we call you..." class="placeholder-nav-brown text-nav-brown">
         </div>
 
-        <div class="form-input">
-          <label class="pb-1vh">Business Name:</label>
+        <div class="form-input contact-form-input">
+          <label class="pb-1vh text-[1.5rem]">Business Name:</label>
           <input type="text" placeholder="Example: AbcCompany" class="placeholder-nav-brown text-nav-brown">
         </div>
 
-        <div class="form-input">
-          <label class="pb-1vh">Message:</label>
+        <div class="form-input contact-form-input">
+          <label class="pb-1vh text-[1.5rem]">Message:</label>
           <textarea class="text-[#000000]"></textarea>
         </div>
 
         <button
           type="submit"
           id="submit-message-btn"
-          class="rounded-20 border-[#000000] border-solid border py-3v bg-[#391111] text-[#ffffff] hover:bg-[#ffffff] hover:text-[#000000] hover:border-nav-brown">Send Us Message</button>
+          class="contact-form-input-send-btn">Send Us Message</button>
       </form>
     </div>
   </div>

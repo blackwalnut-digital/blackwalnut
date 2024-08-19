@@ -31,3 +31,16 @@ body {
   @apply font-lora font-medium;
 }
 
+.navigation-mobile {
+  @apply border-b font-lora text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300 w-[90vw] text-[1.4rem];
+}
+
+.contact-form-input {
+  @apply flex flex-col justify-center pb-[3vh];
+}
+
+.contact-form-input-send-btn {
+  @apply self-center rounded-20 border-[#000000] border-solid border py-3vh bg-[#391111] text-[#ffffff]
+  hover:bg-[#ffffff] hover:text-[#000000] hover:border-nav-brown w-[40vw] md:w-[12vw] text-[1.2rem] py-[1.5vh] px-1vw mb-[3vh];
+}
+

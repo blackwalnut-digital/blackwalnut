@@ -11,29 +11,29 @@
                 hidden md:block"
          alt="Black Walnut Web Design Agency logo">
   </a>
-  <nav id="navigation" class="flex flex-row pt-[4vh] pb-3vh px-5vw">
-    <span class="nav-item-link font-lora"><a [routerLink]="['']" [fragment]="'banner-block'">Home</a></span>
-    <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'what-do-we-do'">Services</a></span>
-    <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'our-mission'">Our Mission</a></span>
-    <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'our-way'">Our Way</a></span>
-    <span class="nav-item-link font-lora"><a routerLink="">Blog</a></span>
-    <span class="nav-item-link font-lora"><a [routerLink]="['/']" [fragment]="'contact-us'">Contact Us</a></span>
+  <nav id="navigation" class="flex flex-row pt-[4vh] pb-3vh px-5vw text-[1.4rem] font-medium">
+    <span class="font-lora"><a [routerLink]="['']" [fragment]="'banner-block'">Home</a></span>
+    <span class="font-lora"><a [routerLink]="['/']" [fragment]="'what-do-we-do'">Services</a></span>
+    <span class="font-lora"><a [routerLink]="['/']" [fragment]="'our-mission'">Our Mission</a></span>
+    <span class="font-lora"><a [routerLink]="['/']" [fragment]="'our-way'">Our Way</a></span>
+    <span class="font-lora"><a routerLink="">Blog</a></span>
+    <span class="font-lora"><a [routerLink]="['/']" [fragment]="'contact-us'">Contact Us</a></span>
   </nav>
 </div>
 
-<div class="flex md:hidden flex-col justify-end items-end">
-  <button (click)="toggleMenu()" class=" p-2">
+<div class="flex md:hidden flex-col">
+  <button (click)="toggleMenu()" class="p-2 self-end">
     <img class="block mb-1" src="../../../assets/img/mobile-menu.svg" alt="Mobile menu">
   </button>
 
-  <nav [ngClass]="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="relative flex flex-col justify-center items-center space-x-4 w-[95vw]">
+  <nav [ngClass]="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="relative flex flex-col justify-center items-center space-x-4 w-[90vw] self-center">
     <ul class="flex flex-col justify-center items-center gap-0">
-      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']">Home</a></li>
-      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'what-do-we-do'">Services</a></li>
-      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'our-mission'">Our Mission</a></li>
-      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'our-way'">Our Way</a></li>
-      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" routerLink="">Blog</a></li>
-      <li class="nav-item-link font-lora border-b border-1 border-solid border-bottom border-black w-100vw text-center py-[2.5vh] hover:bg-[#F3F4F6] transition duration-300"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'contact-us'">Contact Us</a>
+      <li class="border-1 border-solid border-black w-100vw navigation-mobile"><a class="hover:text-[#ffffff]" [routerLink]="['/']">Home</a></li>
+      <li class="border-1 border-solid border-black w-100vw navigation-mobile"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'what-do-we-do'">Services</a></li>
+      <li class="border-1 border-solid border-black w-100vw navigation-mobile"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'our-mission'">Our Mission</a></li>
+      <li class="border-1 border-solid border-black w-100vw navigation-mobile"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'our-way'">Our Way</a></li>
+      <li class="border-1 border-solid border-black w-100vw navigation-mobile"><a class="hover:text-[#ffffff]" routerLink="">Blog</a></li>
+      <li class="border-1 border-solid border-black w-100vw navigation-mobile"><a class="hover:text-[#ffffff]" [routerLink]="['/']" [fragment]="'contact-us'">Contact Us</a>
     </ul>
   </nav>
 </div>

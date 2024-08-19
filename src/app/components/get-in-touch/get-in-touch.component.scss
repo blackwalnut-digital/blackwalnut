@@ -1,35 +1,11 @@
 @import "../../variables.scss";
 
-
-
 #get-in-touch-block {
   padding: 1vh 0vw 10vh 0vw;
 
-  #get-in-touch-header{
-    // text-align: center;
-  }
-
   #get-in-touch-form-block {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-
     #contact-form {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // width: 20vw;
-
       .form-input {
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        padding: 0vh 0vw 3vh 0vw;
-
-        label {
-          font-size: 1.5rem;
-        }
-
         input {
           border: $nav-color 1px solid;
           height: 2.5rem;
@@ -55,8 +31,6 @@
       }
 
       #submit-message-btn {
-        width: 12vw;
-        font-size: 1.2rem;
         padding: 1.5vh 1vw;
       }
     }

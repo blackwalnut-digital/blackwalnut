@@ -3,23 +3,22 @@
 
 
 #get-in-touch-block {
-  // background-color: $body-color;
   padding: 1vh 0vw 10vh 0vw;
 
   #get-in-touch-header{
-    text-align: center;
+    // text-align: center;
   }
 
   #get-in-touch-form-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
 
     #contact-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 20vw;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // width: 20vw;
 
       .form-input {
         display: flex;
@@ -32,7 +31,6 @@
         }
 
         input {
-          // background-color: $body-color;
           border: $nav-color 1px solid;
           height: 2.5rem;
           border-radius: 20px;

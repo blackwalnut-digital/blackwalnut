@@ -36,10 +36,10 @@ module.exports = {
         "100vh":"100vh",
       },
       "boxShadow": {
-        "3xl": '-10px 5px 20px -2px rgba(24, 25, 25, 0.8)'
+        "3xl": '-10px 5px 20px -2px rgba(24, 25, 25, 0.6)'
       },
       "dropShadow": {
-        '3xl': '-10px 5px 20px -2px rgba(24, 25, 25, 0.8)',
+        '3xl': '-10px 5px 20px -2px rgba(24, 25, 25, 0.6)',
       },
       "borderRadius": {
         "20":"20px",

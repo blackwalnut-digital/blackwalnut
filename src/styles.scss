@@ -7,8 +7,27 @@
 @tailwind utilities;
 
 body {
-  // margin: 0;
   background-color: white;
   height: 100vh;
+}
+
+.visibility-item {
+  @apply pr-10vw pb-5vh text-center md:text-left leading-7 text-[1.3rem];
+}
+
+.visibility-item-title {
+  @apply text-[#391111] text-center md:text-left text-[2rem] pb-1vh;
+}
+
+.rounded-shadow {
+  @apply rounded-20 shadow-3xl;
+}
+
+.fadein {
+  @apply transition-opacity duration-2000 ease-in-out;
+}
+
+.lora-medium {
+  @apply font-lora font-medium;
 }
 

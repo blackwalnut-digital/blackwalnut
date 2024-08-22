@@ -1,9 +1,15 @@
-<div class="font-lora w-[90vw] lg:w-[70vw] flex flex-col justify-center items-center px-5vw gap-8 lg:mt-20vh">
-  <div class="flex flex-col lg:flex-row" *ngFor="let service of services; let i = index;" [ngClass]="{'lg:flex-row-reverse': i % 2 !== 0}">
-    <div id="{{ service.id }}">
+<div class="font-lora w-[90vw] flex flex-col justify-center items-center xl:pl-15vw xl:pr-10vw gap-10 xl:gap-20 lg:mt-20vh px-5vw">
+  <div id="{{ service.id }}"
+       class="flex flex-col xl:flex-row mb-[10vh]" *ngFor="let service of services; let i = index;" [ngClass]="{'xl:flex-row-reverse': i % 2 !== 0}">
+    <div>
       <p class="font-medium text-[2rem] leading-9 text-[#4c1616]">{{ service.title }}</p>
       <p class="text-[1.1rem] leading-6">{{ service.description }}</p>
     </div>
-    <img src="{{ service.image }}" alt="Service image">
+    <img src="{{ service.image }}"
+         alt="Service image"
+         class="w-[90vw] lg:w-[50vw] lg:self-center xl:w-[30vw] h-auto max-h-50vh rounded-shadow mt-3vh xl:mt-0"
+         [ngClass]="i % 2 !== 0 ? 'mr-5vw' : 'ml-5vw'">
   </div>
 </div>
+
+<app-footer></app-footer>

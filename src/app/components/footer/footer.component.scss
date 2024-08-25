@@ -1,26 +1,6 @@
 @import "../../variables.scss";
 
 #footer-block {
-  color: $body-color;
-  // padding: 5vh 0vw 1vh 0vw;
-  height: 10vh;
-
-  #contacts-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2vw;
-
-    #social-media-block {
-    }
-
-    #email-phone-block {
-      p {
-        padding: 0;
-        margin: 0;
-      }
-    }
-  }
 
   #copyright-block {
     text-align: center;

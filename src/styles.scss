@@ -12,11 +12,11 @@ body {
 }
 
 .visibility-item {
-  @apply pr-10vw pb-5vh text-center md:text-left leading-7 text-[1.3rem];
+  @apply pr-10vw pb-5vh text-center lg:text-left leading-7 text-[1.3rem];
 }
 
 .visibility-item-title {
-  @apply text-[#391111] text-center md:text-left text-[2rem] pb-1vh;
+  @apply text-[#4c1616] text-center lg:text-left text-[2rem] pb-1vh;
 }
 
 .rounded-shadow {
@@ -40,7 +40,7 @@ body {
 }
 
 .contact-form-input-send-btn {
-  @apply self-center rounded-20 border-[#000000] border-solid border py-3vh bg-[#391111] text-[#ffffff]
-  hover:bg-[#ffffff] hover:text-[#000000] hover:border-nav-brown w-[40vw] md:w-[12vw] text-[1.2rem] py-[1.5vh] px-1vw mb-[3vh];
+  @apply self-center rounded-20 border-[#000000] border-solid border py-3vh bg-[#4c1616] text-[#ffffff]
+  hover:bg-[#ffffff] hover:text-[#000000] hover:border-nav-brown w-[40vw] lg:w-[12vw] text-[1.2rem] py-[1.5vh] px-1vw mb-[3vh];
 }
 

@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { FragmentScrollService } from './services/fragment-scroll.service';
 import { FadeInDirective } from './directives/fade-in.directive';
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FadeInDirective } from './directives/fade-in.directive';
     FooterComponent,
     CalendarComponent,
     CalendarElemComponent,
-    FadeInDirective
+    FadeInDirective,
+    ServicesPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

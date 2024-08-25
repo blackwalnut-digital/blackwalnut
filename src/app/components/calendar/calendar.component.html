@@ -1,7 +1,10 @@
-<div id="calendar-container">
-  <div id="calendar" class="flex flex-row justify-center pt-10vh">
-    <div class="calendly-inline-widget min-w-50vw w-70vw h-80vh px-20" [attr.data-url]="dataUrl"></div>
+<div id="calendar-container" class="mt-5vh">
+  <div id="calendar" class="flex flex-col justify-center items-center pt-10vh gap-4">
+    <div class="lora-medium text-[#4c1616] text-[2rem] leading-10 text-center">Proceed with Calendly to schedule free consultation</div>
+    <div class="calendly-inline-widget min-w-50vw w-[90vw] lg:w-70vw h-80vh px-[2vw]" [attr.data-url]="dataUrl"></div>
   </div>
 </div>
+
+<app-footer></app-footer>
 
 

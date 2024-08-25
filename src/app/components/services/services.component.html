@@ -1,24 +1,28 @@
-<div class="flex flex-col justify-center items-center my-10vh md:my-15vh">
+<div class="flex flex-col justify-center items-center mt-5vh mb-10vh lg:my-15vh">
   <h3 id="what-do-we-do">
     <span appFadeIn
           class="font-lora font-medium
-                text-[3rem] text-[#391111]
+                text-[2.5rem] lg:text-[3rem] text-[#4c1616]
                 fade-in-element opacity-0 fadein">
           What Do We Do
     </span>
   </h3>
   <div appFadeIn
        id="services-block"
-       class="flex flex-col md:flex-row justify-center
-              gap-5vh md:gap-2vw
-              pt-2vh pb-5vh md:px-15vw
+       class="flex flex-col xl:flex-row justify-center
+              gap-5vh lg:gap-2vw
+              pt-2vh pb-5vh xl:px-15vw
               fade-in-element opacity-0 fadein">
-    <div class="group services-card basis-1/4 rounded-shadow w-[80vw] md:w-15vw" *ngFor="let service of services">
+    <div class="group services-card basis-1/4 rounded-shadow w-[80vw] md:w[40vw] xl:w-15vw" *ngFor="let service of services">
       <p class="title text-2rem text-[#ffffff] text-center
-                py-3vh bg-[#391111]
+                py-3vh bg-[#4c1616]
                 rounded-tl-20 rounded-br-20
-                group-hover:text-[#000000] group-hover:bg-[#ffffff] group-hover:ease-in-out duration-300">{{ service.title }}</p>
-      <p class="body leading-8 py-1vh px-1.5vw text-1.4 text-center align-middle">{{ service.body }}</p>
+                group-hover:text-[#000000] group-hover:bg-[#ffffff] group-hover:ease-in-out duration-300">{{ service.cardTitle }}</p>
+      <p class="body leading-8 py-1vh px-1.5vw text-1.4 text-center align-middle">{{ service.shortDescription }}</p>
+      <div class="flex flex-row justify-center">
+        <a href="javascript:void(0)" (click)="navigateToDetails(service.id, $event)" class="text-[#4c1616] text-[1.2rem] font-lora font-medium mb-[4vh]">Read more...</a>
+      </div>
+
     </div>
   </div>
 </div>

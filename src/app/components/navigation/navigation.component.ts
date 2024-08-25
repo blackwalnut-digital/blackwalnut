@@ -17,9 +17,7 @@ export class NavigationComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollThreshold = 2;
-    console.log(this.scrolled);
     this.scrolled = window.scrollY > scrollThreshold;
-    console.log(this.scrolled);
   }
 
   toggleMenu() {

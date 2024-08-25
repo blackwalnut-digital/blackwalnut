@@ -1,23 +1,23 @@
-<div id="banner-block" class="h-100vh flex flex-row justify-start z-0 pb-0 m-0">
+<div id="banner-block" class="h-[80vh] lg:h-100vh flex flex-row justify-start z-0 pb-0 m-0">
 
   <div
        id="headers-container"
-       class="flex flex-col gap-2 justify-start md:justify-center items-center
-              mx-0vw md:mx-10vw px-0">
+       class="flex flex-col gap-2 justify-start lg:justify-center items-center
+              mx-0vw lg:mx-10vw px-0">
 
     <a routerLink="">
       <img src="../../../assets/img/walnut-logo.svg"
-            class="w-[30vw] h-[30vh] z-[999999]
-                  block md:hidden"
+            class="w-[150px] md:w-[20vw] h-auto z-[999999]
+                  block lg:hidden"
             alt="Black Walnut Web Design Agency logo">
     </a>
 
     <h1 id="main-header"
-        class="flex flex-col gap-5 md:gap-10 justify-center items-center
-              w-[95vw] md:w-[35vw]">
-      <span class="font-lora font-medium text-[2.5rem] md:text-[3.5rem] z-10">{{ header.mainHeaderLine1 }}</span>
-      <span class="font-lora font-medium text-[2.5rem] md:text-[3.5rem] z-10">{{ header.mainHeaderLine2 }}</span>
-      <span class="font-lora font-medium text-[2.5rem] md:text-[3.5rem] z-10">{{ header.mainHeaderLine3 }}</span>
+        class="flex flex-col gap-5 lg:gap-10 justify-center items-center
+              w-[95vw] lg:w-[35vw]">
+      <span class="font-lora font-medium text-[2.5rem] lg:text-[3.5rem] z-10 text-nowrap">{{ header.mainHeaderLine1 }}</span>
+      <span class="font-lora font-medium text-[2.5rem] lg:text-[3.5rem] z-10 text-nowrap">{{ header.mainHeaderLine2 }}</span>
+      <span class="font-lora font-medium text-[2.5rem] lg:text-[3.5rem] z-10 text-nowrap">{{ header.mainHeaderLine3 }}</span>
     </h1>
 
     <h2 class="flex flex-col justify-center items-center">
@@ -27,25 +27,26 @@
     </h2>
 
     <button (click)="redirectToCalendar()" id="book-call-btn"
-      class="bg-transparent font-lato font-medium z-10
+      class="bg-[#4c1616] font-lato font-medium z-10
       py-[1.8vh] pb-[2vh] px-0
-      text-[25px] text-[#391111]
-      rounded-20 mt-5vh border-[#391111] border-solid border-2
-      w-[55vw] md:w-[15vw]"
-      type="button">Get Free Consultation
+      text-[25px] text-[#ffffff]
+      rounded-20 mt-5vh
+      w-[55vw] md:w-[35vw] lg:w-[25vw] xl:w-[20vw] 2xl:w-[17vw]
+      transition-all ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-black-500/70"
+      type="button"><span class="text-nowrap">Get Free Consultation</span>
     </button>
   </div>
 
   <div id="picture-block" class="flex flex-row justify-start">
     <img src="../../../assets/img/overlay.svg"
         alt="Wave overlay"
-        class="absolute left-[15vw] my-0 mx-auto p-0 z-0 max-h-100vh h-100vh hidden md:block">
+        class="absolute left-[15vw] my-0 mx-auto p-0 z-0 max-h-100vh h-100vh hidden lg:block">
     <img
       src="../../../assets/img/create-website-growing-business.webp"
       alt="Picture displaying a successful man creating business website"
       class="w-[61.8vw] h-100vh
             object-cover
             z-[-1] absolute left-[37.4vw]
-            hidden md:block">
+            hidden lg:block">
   </div>
 </div>

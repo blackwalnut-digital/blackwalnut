@@ -40,6 +40,21 @@ export interface Section {
   content: ContentComponents;
 }
 
+export interface Detail {
+  description: string;
+}
+
+export interface Service {
+  id: string;
+  cardTitle: string;
+  title: string;
+  description: string;
+  shortDescription: string;
+  image: string;
+  details: Detail[];
+}
+
 export interface Pages {
   home: Section;
+  services: Service[];
 }

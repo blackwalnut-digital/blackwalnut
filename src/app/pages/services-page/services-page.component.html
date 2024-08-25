@@ -4,6 +4,13 @@
     <div>
       <p class="font-medium text-[2rem] leading-9 text-[#4c1616]">{{ service.title }}</p>
       <p class="text-[1.1rem] leading-6">{{ service.description }}</p>
+
+      <div *ngFor="let detail of service.details;">
+        <div class="flex flex-row gap-2">
+          <img src="../../../assets/img/checkmark.svg" alt="Details icon">
+          <p class="text-[1.1rem] leading-6 pt-[12px]">{{ detail.description }}</p>
+        </div>
+      </div>
     </div>
     <img src="{{ service.image }}"
          alt="Service image"

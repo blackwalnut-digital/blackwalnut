@@ -1,16 +1,16 @@
 <div appFadeIn
      id="process-block"
-     class="md:mb-20vh
+     class="lg:mb-5vh
             fade-in-element opacity-0 fadein">
   <div id="process-content-block">
-    <h3 class="text-center py-5vh"><span class="text-[#391111] text-[3rem] leading-10">{{ process.header }}</span></h3>
+    <h3 class="text-center py-[2vh]"><span class="text-[#4c1616] text-[3rem] leading-10">{{ process.header }}</span></h3>
 
-    <div class="flex flex-col md:flex-row items-center md:justify-center gap-10 md:pt-1vh">
-      <div id="process-body-block" *ngFor="let step of process.steps; let i = index" [ngClass]="{'md:mt-15vh' : i % 2 !== 0}">
+    <div class="flex flex-col lg:flex-row items-center lg:justify-center gap-10 lg:pt-1vh">
+      <div id="process-body-block" *ngFor="let step of process.steps; let i = index" [ngClass]="{'lg:mt-[25vh]' : i % 2 !== 0}">
 
-        <div class="process-step-block flex flex-col justify-center items-center w-15vw h-15vh">
-          <img loading="lazy" fetchPriority="low" src="{{ step.image }}" class="w-10vw h-20vh" alt="Process step">
-          <p class="w-[90vw] md:w-10vw text-[1.3rem] text-center font-lora leading-6 text-[#391111]">{{ step.value }}</p>
+        <div class="process-step-block flex flex-col justify-center items-center w-30vw h-30vh">
+          <img loading="lazy" fetchPriority="low" src="{{ step.image }}" class="w-[90vw] md:w-[35vw] lg:w-[18vw] h-auto max-h-[40vh] rounded-shadow mb-[3vh]" alt="Process step">
+          <p class="w-[90vw] lg:w-10vw text-[1.3rem] text-center font-lora leading-6 text-[#4c1616]">{{ step.value }}</p>
         </div>
       </div>
     </div>

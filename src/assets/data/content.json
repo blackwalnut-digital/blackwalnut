@@ -4,26 +4,12 @@
       "mainHeaderLine1": "Create",
       "mainHeaderLine2": "Website That Grows ",
       "mainHeaderLine3": "Your Business",
-      "subHeaderLine1": "Become visible online with a",
-      "subHeaderLine2": "stunning website and expert SEO",
-      "subHeaderLine3": "optimization!"
+      "subHeaderLine1": "Stand out with modern web design",
+      "subHeaderLine2": "and search engine optimization!",
+      "subHeaderLine3": "Bring your business to the next level!"
     },
     "content": {
       "visibilityBlockHeader": "For a small business, a website is a powerful tool that drives growth, increases visibility, and enhances customer relations. Investing in a well-designed, SEO-optimized website is crucial for long-term success in today's digital marketplace.",
-      "serviceCards": [
-        {
-          "title": "Design",
-          "body": "We design user-friendly websites that effectively represent brands and engage crowds on any devices."},
-        {
-          "title": "SEO",
-          "body": "Make your website a tool to reach your audience. SEO optimization is a crucial part of any website. Drive more traffic and increase your online presence."},
-        {
-          "title": "Support",
-          "body": "Enjoy peace of mind with unlimited changes to your existing design or SEO configuration.  Our dedicated team is here to ensure your website stays updated and optimized."},
-        {
-          "title": "Hosting",
-          "body": "No need to worry that your website can fail you. Enjoy reliable and secure hosting services to keep your website running smoothly and accessible at all times."}
-      ],
       "mission": {
         "title": "Our Mission",
         "description": "At Black Walnut, our mission is to empower businesses to thrive in the digital landscape. Strong online presence is crucial for success in today's market. We believe in the power of digital connections and work tirelessly to bridge the gap between businesses and their potential clients. Every day, we bring value to the communities we serve. By aligning your digital goals with your business objectives, we help you achieve sustainable growth and success. Join us on this journey to digital excellence."
@@ -32,22 +18,22 @@
         "header": "Follow The Way To Success",
         "steps": [
           {
-            "image": "assets/img/telephone.svg",
+            "image": "assets/img/communication.webp",
             "stepClassName": "process-description",
             "value": "Get a free consultation and let us know about your business goals."
           },
           {
-            "image": "assets/img/paintbrush.svg",
+            "image": "assets/img/design.webp",
             "stepClassName": "process-description-odd",
             "value": "We design a website according to your business needs."
           },
           {
-            "image": "assets/img/implementation.svg",
+            "image": "assets/img/business-growing.webp",
             "stepClassName": "process-description",
             "value": "We implement features that make your business grow."
           },
           {
-            "image": "assets/img/search.svg",
+            "image": "assets/img/google-search.webp",
             "stepClassName": "process-description",
             "value": "Get visible online and start delivering to your clients."
           }
@@ -55,7 +41,75 @@
       }
 
     }
-  }
+  },
+  "services": [
+    {
+      "id":"design-service",
+      "cardTitle": "Design",
+      "title":"Lightweight. Fresh. User-friendly.",
+      "description":"Having a lightweight, modern-looking website is essential for business success because it enhances user experience and boosts engagement. A sleek, contemporary design reflects professionalism and credibility, making a strong first impression on visitors. Lightweight websites load faster, reducing bounce rates and improving the overall user experience, especially on mobile devices. This is crucial as users expect quick, seamless interactions online. Moreover, faster-loading websites are favored by search engines, contributing to better SEO rankings. By combining modern aesthetics with optimized performance, your website can attract and retain more visitors, ultimately driving higher conversions and supporting long-term business growth.",
+      "shortDescription": "We design user-friendly websites that effectively represent brands and engage crowds on any devices.",
+      "image":"assets/img/web-design.webp",
+      "details": [
+        {"description": "Responsive website design"},
+        {"description": "Logo design"},
+        {"description": "High website performance"}
+      ]
+    },
+    {
+      "id":"seo-service",
+      "cardTitle": "SEO",
+      "title":"Optimize content to gather people and provide value.",
+      "description":"SEO (Search Engine Optimization) is crucial for business growth because it improves a website's visibility in search engine results. When your website ranks higher, it attracts more organic traffic from users actively searching for products or services related to your business. This targeted traffic is more likely to convert into customers, leading to increased sales and revenue. Additionally, SEO helps build credibility and trust with both users and search engines by optimizing content, improving site performance, and ensuring a mobile-friendly experience. Over time, a well-executed SEO strategy can significantly enhance brand awareness, customer engagement, and overall business growth, making it an essential component of digital marketing.",
+      "shortDescription": "Make your website a tool to reach your audience. SEO optimization is a crucial part of any website. Drive more traffic and increase your online presence.",
+      "image":"assets/img/seo-backlinks.webp",
+      "details": [
+        {"description": "Keyword research"},
+        {"description": "SEO friendly content"},
+        {"description": "Google Analytics integration"}
+      ]
+    },
+    {
+      "id":"support-service",
+      "cardTitle": "Support",
+      "title":"Add unlimited new features as you grow.",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare lacus eget laoreet viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac sem consectetur, finibus elit sit amet, rhoncus sapien. Nam vulputate congue elit in efficitur. Sed quis ipsum vel enim imperdiet interdum eget nec libero. Duis in ullamcorper risus, vel pulvinar dui. Nunc pulvinar velit ex, et semper tellus elementum vel. Mauris sit amet tincidunt felis, in laoreet lacus. Nunc eu mattis diam. Nullam blandit risus ex, sed condimentum velit bibendum eu. Curabitur iaculis eros quis nisl faucibus placerat. Maecenas fermentum orci a pharetra auctor. Phasellus nec turpis consectetur, rhoncus mi posuere, faucibus ante.",
+      "shortDescription": "Enjoy peace of mind with unlimited changes to your existing design or SEO configuration. Our dedicated team is here to ensure your website stays updated and optimized.",
+      "image":"assets/img/support.webp",
+      "details": [
+        {"description": "Unlimited design edits"},
+        {"description": "Content updates"},
+        {"description": "Performance improvements"}
+      ]
+    },
+    {
+      "id":"hosting-service",
+      "cardTitle": "Hosting",
+      "title":"Never worry again. Your website is working while you sleep.",
+      "description":"Ensuring that your website never lets you down is critical, and hosting with us guarantees reliability and peace of mind. Our robust hosting solutions are designed to keep your website up and running smoothly, no matter the traffic or demand. With our state-of-the-art infrastructure, regular backups, and 24/7 monitoring, you can trust that your website will remain accessible and perform optimally at all times. We prioritize security, speed, and uptime, so you can focus on growing your business without worrying about technical issues. Hosting with us means your website is in safe hands, ensuring it consistently supports your business goals and never disappoints.",
+      "shortDescription": "No need to worry that your website can fail you. Enjoy reliable and secure hosting services to keep your website running smoothly and accessible at all times.",
+      "image":"assets/img/hosting.webp",
+      "details": [
+        {"description": "Secure, reliable and scalable hosting"},
+        {"description": "Content caching"}
+      ]
+    }
+  ],
+  "blog": [
+    {"title": "",
+      "article": "",
+      "image": "" },
+    {"title": "",
+      "article": "",
+        "image": "" },
+    {"title": "",
+      "article": "",
+      "image": "" },
+    {"title": "",
+      "article": "",
+      "image": ""
+    }
+  ]
 }
 
 

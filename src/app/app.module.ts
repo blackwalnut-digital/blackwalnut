@@ -20,6 +20,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { FragmentScrollService } from './services/fragment-scroll.service';
 import { FadeInDirective } from './directives/fade-in.directive';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule, HttpClientModule, BrowserAnimationsModule, FullCalendarModule
+    AppRoutingModule, HttpClientModule, BrowserAnimationsModule, FullCalendarModule, ReactiveFormsModule, FormsModule
   ],
   exports: [FadeInDirective],
   providers: [FragmentScrollService],

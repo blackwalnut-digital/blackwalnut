@@ -20,20 +20,38 @@
     </div>
 
     <div id="get-in-touch-form-block" class="flex flex-row justify-center">
-      <form id="contact-form" class="text-[#000000] flex flex-col justify-center w-[90vw] lg:w-20vw">
+      <form id="contact-form" class="text-[#000000] flex flex-col justify-center w-[90vw] lg:w-20vw" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
         <div class="form-input contact-form-input">
           <label class="pb-1vh text-[1.5rem]">Name:</label>
-          <input type="text" placeholder="Tell us how can we call you..." class="placeholder-nav-brown text-nav-brown">
+          <input id="name" formControlName="name" type="text" placeholder="Tell us how can we call you..." class="placeholder-nav-brown text-nav-brown">
         </div>
 
         <div class="form-input contact-form-input">
           <label class="pb-1vh text-[1.5rem]">Business Name:</label>
-          <input type="text" placeholder="Example: AbcCompany" class="placeholder-nav-brown text-nav-brown">
+          <input id="businessName" formControlName="businessName" type="text" placeholder="Example: AbcCompany" class="placeholder-nav-brown text-nav-brown">
+
+          <div *ngIf="emailForm.get('businessName')?.invalid && emailForm.get('businessName')?.touched">
+            <small *ngIf="emailForm.get('businessName')?.hasError('required')">Business Name is required.</small>
+          </div>
+        </div>
+
+        <div class="form-input contact-form-input">
+          <label class="pb-1vh text-[1.5rem]">Email:</label>
+          <input id="businessEmail" formControlName="email" type="email" placeholder="Example: abc@gmail.com" class="placeholder-nav-brown text-nav-brown">
+
+          <div *ngIf="emailForm.get('email')?.invalid && emailForm.get('email')?.touched">
+            <small *ngIf="emailForm.get('email')?.hasError('required')">Email is required.</small>
+            <small *ngIf="emailForm.get('email')?.hasError('email')">Invalid email format.</small>
+          </div>
         </div>
 
         <div class="form-input contact-form-input">
           <label class="pb-1vh text-[1.5rem]">Message:</label>
-          <textarea class="text-[#000000]"></textarea>
+          <textarea id="message" formControlName="message" class="text-[#000000]"></textarea>
+
+          <div *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
+            <small *ngIf="emailForm.get('message')?.hasError('required')">Message is required.</small>
+          </div>
         </div>
 
         <button

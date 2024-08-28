@@ -21,6 +21,8 @@ import { FragmentScrollService } from './services/fragment-scroll.service';
 import { FadeInDirective } from './directives/fade-in.directive';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     CalendarComponent,
     CalendarElemComponent,
     FadeInDirective,
-    ServicesPageComponent
+    ServicesPageComponent,
+    PricingComponent,
+    PricingPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

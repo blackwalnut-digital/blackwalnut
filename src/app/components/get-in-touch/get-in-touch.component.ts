@@ -13,6 +13,7 @@ export class GetInTouchComponent implements OnInit {
 
   constructor(private fb: FormBuilder, private emailService: EmailService) {
     this.emailForm = this.fb.group({
+      name: ['', ],
       email: ['', [Validators.required, Validators.email]],
       businessName: ['', Validators.required],
       message: ['', Validators.required],

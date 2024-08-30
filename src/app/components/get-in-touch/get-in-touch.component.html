@@ -19,7 +19,7 @@
       <p class="text-[#4c1616] font-lora text-[2rem]">OR</p>
     </div>
 
-    <div id="get-in-touch-form-block" class="flex flex-row justify-center">
+    <div id="get-in-touch-form-block" class="flex flex-row justify-center" *ngIf="!isSubmitted; else successMessage">
       <form id="contact-form" class="text-[#000000] flex flex-col justify-center w-[90vw] lg:w-20vw" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
         <div class="form-input contact-form-input">
           <label class="pb-1vh text-[1.5rem]">Name:</label>
@@ -60,5 +60,9 @@
           class="contact-form-input-send-btn">Send Us Message</button>
       </form>
     </div>
+
+    <ng-template #successMessage>
+      <div class="text-[1.2rem] font-lora text-[#4c1616] leading-6">Your message has been submitted. We will get back to you shortly.</div>
+    </ng-template>
   </div>
 </div>

@@ -8,6 +8,7 @@ import { EmailService } from 'src/app/services/email.service';
   styleUrls: ['./get-in-touch.component.scss']
 })
 export class GetInTouchComponent implements OnInit {
+  isSubmitted = false;
 
   emailForm: FormGroup;
 
@@ -25,5 +26,6 @@ export class GetInTouchComponent implements OnInit {
 
   onSubmit() {
     this.emailService.sendEmail(this.emailForm.value);
+    this.isSubmitted = true;
   }
 }

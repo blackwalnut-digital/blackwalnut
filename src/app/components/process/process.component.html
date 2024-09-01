@@ -3,7 +3,7 @@
      class="lg:mb-5vh
             fade-in-element opacity-0 fadein">
   <div id="process-content-block">
-    <h3 class="text-center py-[2vh]"><span class="text-[#4c1616] text-[3rem] leading-10">{{ process.header }}</span></h3>
+    <h3 class="text-center py-[2vh]"><span class="text-[#4c1616] text-[3rem] leading-10 w-[90vw] lg:w-[80vw]">{{ process.header }}</span></h3>
 
     <div class="flex flex-col lg:flex-row items-center lg:justify-center gap-10 lg:pt-1vh">
       <div id="process-body-block" *ngFor="let step of process.steps; let i = index" [ngClass]="{'lg:mt-[25vh]' : i % 2 !== 0}">

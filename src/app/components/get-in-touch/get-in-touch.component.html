@@ -47,7 +47,7 @@
 
         <div class="form-input contact-form-input">
           <label class="pb-1vh text-[1.5rem]">Message:</label>
-          <textarea id="message" formControlName="message" class="text-[#000000]"></textarea>
+          <textarea id="message" formControlName="message" class="text-[#000000] w-[90vw] lg:w-20vw"></textarea>
 
           <div *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
             <small *ngIf="emailForm.get('message')?.hasError('required')">Message is required.</small>
